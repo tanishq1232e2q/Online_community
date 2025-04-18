@@ -133,16 +133,9 @@ function SideDrawer() {
         p="5px 10px 5px 10px"
         borderWidth="5px"
       >
-        <Tooltip label="Search Users to chat" hasArrow placement="bottom-end">
-          <Button variant="ghost" onClick={onOpen}>
-            <i className="fas fa-search"></i>
-            <Text d={{ base: "none", md: "flex" }} px={4}>
-              Search User
-            </Text>
-          </Button>
-        </Tooltip>
-        <Text fontSize="2xl" fontFamily="Work sans">
-          Talk-A-Tive
+        
+        <Text fontSize="2xl" fontFamily="Courier New', Courier, monospace">
+          Community Group Chat
         </Text>
         <div>
           <Menu>
@@ -151,7 +144,7 @@ function SideDrawer() {
                 count={notification.length}
                 effect={Effect.SCALE}
               />
-              <BellIcon fontSize="2xl" m={1} />
+              {/* <BellIcon fontSize="2xl" m={1} /> */}
             </MenuButton>
             <MenuList pl={2}>
               {!notification.length && "No New Messages"}
@@ -193,7 +186,7 @@ function SideDrawer() {
       <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerHeader borderBottomWidth="1px">Search Users</DrawerHeader>
+          <DrawerHeader borderBottomWidth="1px"></DrawerHeader>
           <DrawerBody>
             <Box d="flex" pb={2}>
               <Input

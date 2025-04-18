@@ -20,7 +20,7 @@ const accessChat = asyncHandler(async (req, res) => {
       { users: { $elemMatch: { $eq: userId } } },
     ],
   })
-    .populate("users", "-password")
+    .populate("myuser", "-password")
     .populate("latestMessage");
 
   isChat = await User.populate(isChat, {
@@ -40,7 +40,7 @@ const accessChat = asyncHandler(async (req, res) => {
     try {
       const createdChat = await Chat.create(chatData);
       const FullChat = await Chat.findOne({ _id: createdChat._id }).populate(
-        "users",
+        "myuser",
         "-password"
       );
       res.status(200).json(FullChat);
@@ -57,7 +57,7 @@ const accessChat = asyncHandler(async (req, res) => {
 const fetchChats = asyncHandler(async (req, res) => {
   try {
     Chat.find({ users: { $elemMatch: { $eq: req.user._id } } })
-      .populate("users", "-password")
+      .populate("myuser", "-password")
       .populate("groupAdmin", "-password")
       .populate("latestMessage")
       .sort({ updatedAt: -1 })
@@ -101,7 +101,7 @@ const createGroupChat = asyncHandler(async (req, res) => {
     });
 
     const fullGroupChat = await Chat.findOne({ _id: groupChat._id })
-      .populate("users", "-password")
+      .populate("myuser", "-password")
       .populate("groupAdmin", "-password");
 
     res.status(200).json(fullGroupChat);
@@ -126,7 +126,7 @@ const renameGroup = asyncHandler(async (req, res) => {
       new: true,
     }
   )
-    .populate("users", "-password")
+    .populate("myuser", "-password")
     .populate("groupAdmin", "-password");
 
   if (!updatedChat) {
@@ -154,7 +154,7 @@ const removeFromGroup = asyncHandler(async (req, res) => {
       new: true,
     }
   )
-    .populate("users", "-password")
+    .populate("myuser", "-password")
     .populate("groupAdmin", "-password");
 
   if (!removed) {
@@ -182,7 +182,7 @@ const addToGroup = asyncHandler(async (req, res) => {
       new: true,
     }
   )
-    .populate("users", "-password")
+    .populate("myuser", "-password")
     .populate("groupAdmin", "-password");
 
   if (!added) {

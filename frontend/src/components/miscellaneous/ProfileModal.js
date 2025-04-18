@@ -60,6 +60,8 @@ const ProfileModal = ({ user, children }) => {
           </ModalFooter>
         </ModalContent>
       </Modal>
+      
+
     </>
   );
 };

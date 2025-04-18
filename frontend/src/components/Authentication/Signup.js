@@ -100,9 +100,9 @@ const Signup = () => {
     if (pics.type === "image/jpeg" || pics.type === "image/png") {
       const data = new FormData();
       data.append("file", pics);
-      data.append("upload_preset", "chat-app");
-      data.append("cloud_name", "piyushproj");
-      fetch("https://api.cloudinary.com/v1_1/piyushproj/image/upload", {
+      data.append("upload_preset", "chatapp");
+      data.append("cloud_name", "dppuvmfor");
+      fetch("https://api.cloudinary.com/v1_1/dppuvmfor/image/upload", {
         method: "post",
         body: data,
       })
@@ -176,7 +176,7 @@ const Signup = () => {
           </InputRightElement>
         </InputGroup>
       </FormControl>
-      <FormControl id="pic">
+      {/* <FormControl id="pic">
         <FormLabel>Upload your Picture</FormLabel>
         <Input
           type="file"
@@ -184,7 +184,7 @@ const Signup = () => {
           accept="image/*"
           onChange={(e) => postDetails(e.target.files[0])}
         />
-      </FormControl>
+      </FormControl> */}
       <Button
         colorScheme="blue"
         width="100%"
