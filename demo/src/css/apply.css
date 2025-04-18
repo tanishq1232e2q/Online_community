@@ -1,0 +1,62 @@
+.prof{
+    margin-top: 4rem;
+}
+.details input{
+    width: 1rem;
+}
+.apply div{
+    margin: 1rem 0rem;
+}
+.vbb{
+    margin-top: 4rem;
+}
+
+.sh{
+    margin-top: 7rem;
+}
+.prom{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0rem 3rem;
+    gap:4rem
+}
+.prom .card {
+    border: 2px solid coral;
+}
+
+
+
+
+.modal-show .modal-dialog{
+    padding: 1px;
+}
+
+.modal-backdrop.show {
+    opacity: 0;
+}
+Link{
+    text-decoration: none;
+    color:white
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 8rem;
+    box-shadow: 2px 3px 4px 1px black;
+}
+.bnn{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.resume .mb-4{
+    /* display: flex; */
+}

@@ -1,0 +1,85 @@
+.conts img{
+    width: 50%;
+    gap:4rem;
+    mix-blend-mode: multiply;
+    z-index: 100;
+}
+.conts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    
+    /* background-image: url("../assets/b2 (1).png"); */
+
+}
+.conts div{
+    display: flex;
+    flex-direction: column;
+}
+.conts button{
+    position: relative;
+    left: 12rem;
+    top: 1rem;
+    width: 10rem;
+    color: black;
+}
+.mainuser{
+    /* margin-top: 8rem; */
+
+    /* box-shadow: 2px 3px 2px 2px black; */
+    width: 20%;
+    /* height: 100vh; */
+    margin-top: 14rem;
+    /* margin-left: 10rem; */
+    position: relative;
+    left: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.achievement-wall{
+    margin-top: 8rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.achievement-card{
+    border: 2px solid black;
+    display: flex;
+    background-color: lightcyan;
+    width: 23rem;
+    border-radius: 12px;
+    padding: 1.1rem;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.achievement-form{
+    /* margin-left: 20rem; */
+    width: 30rem;
+}
+.boon{
+    position: relative;
+    left: 23rem;
+}
+.achievement-form input{
+    border: 2px solid coral;
+    
+}
+.achievement-form textarea{
+    border: 2px solid coral;
+   
+}
+.achievement-form .form-group{
+    margin: 1.3rem 0rem;
+}

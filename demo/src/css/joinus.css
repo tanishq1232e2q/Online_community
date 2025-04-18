@@ -1,0 +1,128 @@
+.joinus-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    width: 41rem;
+
+    position: absolute;
+    top: 8rem;
+    /* background-color: aquamarine; */
+    z-index: 100;
+    /* border: 2px solid black; */
+    border-radius: 12px;
+    padding: 2rem;
+    /* background-image: url("../assets/ai-generated-8051238_1280.jpg"); */
+}
+.login-heading {
+    text-align: center;
+    position: absolute;
+    top: 15rem;
+    left: 5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .joinus-form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: #ffffff;
+    box-shadow: 3px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #555454;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .login-btn {
+    float: right;
+    background-color: #007bff;
+    
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    transition: background 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+
+
+
+.col{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.joinus-form div input{
+    width: 21rem;
+    margin-bottom: 1.1rem ;
+    border: 2px solid orange;
+    
+}
+
+.role-cards{
+    display: flex;
+    gap: 2rem;
+
+}
+
+.btn{
+    float:"right";
+    width:"8rem";
+    margin-Top:"1.1rem";
+    border-Radius:"12px"
+}
+.bg-hos{
+   
+}
+.bkk .joinus-form div input{
+    width: 35rem;
+}
+.bkk .joinus-form button{
+    width: 5rem;
+    float: right;
+}
+
+.role-cards .role-card{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid orange;
+    padding: 1.1rem;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.role-cards .role-card:hover{
+    border: 5px solid orange;
+}
+
+.role-cards .role-card img{
+    width: 16rem;
+    border-radius: 12px;
+}
