@@ -37,7 +37,10 @@ Browser(Opera, Firefox, Chrome)- For testing the application and chat responses.
 Features--
 Architected a niche professional community platform that connects job seekers and recruiters, fostering industry
 knowledge exchange and boasting users sign-ups within the first week of launch.
+
 • User access management facility and their dashboard, Recruiter’s dashboard where they can survey, post jobs and
-connect with others
+connect with others.
+
 • Designed a job seeker dashboard with profile building, job search and filtering.
+
 • Community section is established where the professionals can meet up, chat and post their achievements.
